@@ -1,6 +1,7 @@
-const path  = require('path')
-const merge = require('webpack-merge')
-const base  = require('./webpack.base')
+const path        = require('path')
+const merge       = require('webpack-merge')
+const BrowserSync = require('browser-sync-webpack-plugin');
+const base        = require('./webpack.base')
 
 module.exports = merge(base, {
   mode    : 'development',
@@ -17,9 +18,13 @@ module.exports = merge(base, {
       }
     ]
   },
-  devServer : {
-    contentBase        : path.join(__dirname, '../dist'),
-    historyApiFallback : true,
-    port               : 3001
-  }
+  plugins : [
+    new BrowserSync({
+      files: '../**/*.php',
+      host: 'localhost',
+      port: 8080,
+      proxy: 'http://sonrieme.test'
+    })
+  ]
+
 })

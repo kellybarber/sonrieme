@@ -4,7 +4,7 @@
   "description": "A Wordpress Theme for Sonrieme Dental Clinic",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack.dev.js --hot",
+    "start": "webpack --watch --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,8 @@
     "babel-plugin-import": "^1.12.1",
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
