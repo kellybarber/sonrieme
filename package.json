@@ -1,0 +1,36 @@
+{
+  "name": "sonrieme",
+  "version": "1.0.0",
+  "description": "A Wordpress Theme for Sonrieme Dental Clinic",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config config/webpack.dev.js --hot",
+    "build": "webpack --config config/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kelly Barber",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.12.1",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
