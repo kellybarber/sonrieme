@@ -18,5 +18,9 @@ add_action( 'init', 'setup_theme' );
 
 
 
+
+// Selectively Disable Editor 
+require get_template_directory() . '/inc/disable-editor.php';
+
 // Custom Gutenberg Blocks
 require get_template_directory() . '/inc/gutenberg.php';
