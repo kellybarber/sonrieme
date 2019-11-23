@@ -16,8 +16,8 @@ function setup_theme() {
 }
 add_action( 'init', 'setup_theme' );
 
-
-
+// Include the Composer autoload file
+require BASE_PATH . 'vendor/autoload.php';
 
 // Selectively Disable Editor 
 require get_template_directory() . '/inc/disable-editor.php';
