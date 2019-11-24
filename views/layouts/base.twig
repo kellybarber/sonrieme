@@ -1,0 +1,30 @@
+<!doctype html>
+<html {{ language_attributes }}>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sonrieme</title>
+    {{ wp_head }}
+  </head>
+
+  <body {{ body_class }} ?> >
+
+    <div class="container">
+      {% include 'partials/nav.twig' %}
+      {% include 'partials/header.twig' %}
+    </div>
+
+    <main role="main" class="container">
+      {% block content %}
+      {% endblock %}
+    </main>
+
+    <footer>
+      
+    </footer>
+    {{ wp_footer }}
+
+  </body>
+
+</html>

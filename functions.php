@@ -1,4 +1,8 @@
-<?php 
+<?php
+
+// Load Dependencies
+require_once( __DIR__ . '/vendor/autoload.php' );
+require_once(__DIR__ . '/classes/timber-controller.php');
 
 // Add Styles and Scripts
 function enqueue_auxiliary_scripts() {
@@ -16,8 +20,9 @@ function setup_theme() {
 }
 add_action( 'init', 'setup_theme' );
 
-// Include the Composer autoload file
-require_once 'vendor/autoload.php';
+// Initialize Libraries
+$timber = new Timber\Timber();
+new TImber_Site();
 
 // Selectively Disable Editor 
 require get_template_directory() . '/inc/disable-editor.php';

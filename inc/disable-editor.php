@@ -11,7 +11,7 @@ function disable_editor( $id = false ) {
   );
 
   $excluded_ids = array(
-		// get_option( 'page_on_front' )
+		get_option( 'page_on_front' )
 	);
 
   $template = get_page_template_slug( $id );
