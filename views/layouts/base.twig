@@ -8,21 +8,16 @@
     {{ wp_head }}
   </head>
 
-  <body {{ body_class }} ?> >
-
-    <div class="container">
-      {% include 'partials/nav.twig' %}
-      {% include 'partials/header.twig' %}
-    </div>
+  <body {{ body_class }} ?> 
+    
+    {% include 'partials/header.twig' %}
 
     <main role="main" class="container">
       {% block content %}
       {% endblock %}
     </main>
 
-    <footer>
-      
-    </footer>
+    {% include 'partials/footer.twig' %}
     {{ wp_footer }}
 
   </body>

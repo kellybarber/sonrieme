@@ -1,6 +1,84 @@
+// Load Bitter Font
+@font-face {
+  font-family: 'bitter';
+  src: url('/fonts/bitter/Bitter-Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bitter';
+  src: url('/fonts/bitter/Bitter-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'bitter';
+  src: url('/fonts/bitter/Bitter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Load Mul Font
+@font-face {
+  font-family: 'muli';
+  src: url('/fonts/muli/Muli-Normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'muli';
+  src: url('/fonts/muli/Muli-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'muli';
+  src: url('/fonts/muli/Muli-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'muli';
+  src: url('/fonts/muli/Muli-Light.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'muli', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
+  color: $blue-dark;
+}
+
+h1 {
+  font-family: 'bitter';
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+h2 {
+  font-family: 'bitter';
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+h3 {
+  font-family: 'muli';
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+p {
+  font-family: 'muli';
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.button-small {
+  font-family: 'muli';
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.button-large {
+  font-family: 'muli';
+  font-size: 1.6rem;
+  font-weight: bold;
 }
