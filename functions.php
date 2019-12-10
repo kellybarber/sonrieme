@@ -29,3 +29,6 @@ require get_template_directory() . '/inc/disable-editor.php';
 
 // Custom Gutenberg Blocks
 require get_template_directory() . '/inc/gutenberg.php';
+
+// Custom Post Types
+require get_template_directory() . '/inc/post-types.php';
