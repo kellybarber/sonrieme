@@ -1,0 +1,10 @@
+.wp-block-sonrieme-blocks-post-grid {
+  @for $column from 1 through 6 {
+    &.columns--#{$column} {
+      > * {
+        float: left;
+        width: calc(100% / #{$column});
+      }
+    }
+  }
+}

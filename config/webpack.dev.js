@@ -22,8 +22,8 @@ module.exports = merge(base, {
     new BrowserSync({
       files: '../**/*.php',
       host: 'localhost',
-      port: 8080,
-      proxy: 'http://sonrieme.test'
+      port: 3000,
+      proxy: 'http://sonriemedental.test'
     })
   ]
 

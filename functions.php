@@ -20,15 +20,23 @@ function setup_theme() {
 }
 add_action( 'init', 'setup_theme' );
 
+// Setup Auxiliary Features After Initial Load
+function setup_auxiliary_features() {
+    // Add Image Thumbnails
+    add_theme_support( 'post-thumbnails' );
+
+    add_image_size( 'logo', 100, null, true );
+    add_image_size( 'page-header', 1920, 1080, true );
+
+}
+add_action( 'after_setup_theme', 'setup_auxiliary_features');
+
 // Initialize Libraries
 $timber = new Timber\Timber();
 new TImber_Site();
 
 // Selectively Disable Editor 
 require get_template_directory() . '/inc/disable-editor.php';
-
-// Custom Gutenberg Blocks
-require get_template_directory() . '/inc/gutenberg.php';
 
 // Custom Post Types
 require get_template_directory() . '/inc/post-types.php';
