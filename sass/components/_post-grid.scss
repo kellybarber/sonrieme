@@ -1,9 +1,13 @@
 .wp-block-sonrieme-blocks-post-grid {
   @for $column from 1 through 6 {
     &.columns--#{$column} {
+      display: grid;
+      grid-template-columns: repeat(#{$column}, 1fr);
+
       > * {
         float: left;
-        width: calc(100% / #{$column});
+        //width: calc(100% / #{$column});
+        width: 100%;
       }
     }
   }

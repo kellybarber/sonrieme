@@ -1,0 +1,9 @@
+.wp-block-cover {
+  @extend .main-grid;
+
+  .wp-block-cover__inner-container {
+    @extend .content-container;
+
+    
+  }
+}

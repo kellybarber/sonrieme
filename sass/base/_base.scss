@@ -7,16 +7,6 @@
 
 html {
   font-size: 62.5%;
-
-  //@include breakpoint(tab-land) { // width < 1200?
-  //  font-size: 56.25%;  //1 rem = 9px, 9/16 = 50%
-  //}
-  //@include breakpoint(tab-port) { // width < 900?
-  //  font-size: 50%;     //1 rem = 8px, 8/16 = 50%
-  //}
-  //@include breakpoint(desktop) {
-  //  font-size: 75%;     //1rem = 12px, 12/16 = 75%
-  //}
 }
 
 body {
@@ -26,4 +16,14 @@ body {
   @include breakpoint(tab-port) {
     padding: 0;
   }
+}
+
+.content-container {
+  margin: 0 1.6rem;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 0.8rem;
 }
