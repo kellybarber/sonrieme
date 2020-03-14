@@ -1,9 +1,26 @@
 .wp-block-cover {
-  @extend .main-grid;
+  @extend .content-container;
+  height: 80vh;
 
   .wp-block-cover__inner-container {
-    @extend .content-container;
+    @extend .main-grid;
 
-    
+    > * {
+      grid-column: 1 / span 6;
+
+      &:first-child {
+        margin-bottom: 1.6rem;
+      }
+      + p {
+        grid-column: 2 / span 4;
+      }
+      &.wp-block-button {
+        margin-top: 8.8rem;
+        > a {
+          @extend .button-large;
+        }
+      }
+    }
+
   }
 }

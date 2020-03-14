@@ -1,0 +1,29 @@
+.button-small {
+  padding: 1.6rem 4.5rem;
+  font-family: 'muli';
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.button-large {
+  padding: 1.6rem 4.5rem;
+  font-family: 'muli';
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.wp-block-button {
+  grid-column: 2 / span 4;
+
+  &.is-style-outline &__link {
+    border: 2px solid $grey-primary;
+  }
+
+  > a {
+    @extend .button-small;
+  }
+}
+
+.wp-block-group .wp-block-button {
+  margin-top: 3.2rem;
+}

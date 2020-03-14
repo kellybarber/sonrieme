@@ -1,0 +1,15 @@
+.content-container {
+  padding: 0 1.6rem;
+}
+.content-vertical-padding {
+  padding-top: 3.2rem;
+  padding-bottom: 4rem;
+}
+
+.wp-block-group {
+  @extend .content-container;
+  @extend .content-vertical-padding;
+  > .wp-block-group__inner-container {
+    @extend .main-grid;
+  }
+}

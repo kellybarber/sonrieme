@@ -27,6 +27,7 @@ function setup_auxiliary_features() {
 
     add_image_size( 'logo', 100, null, true );
     add_image_size( 'page-header', 1920, 1080, true );
+    add_image_size( 'section-header', 700, 700, true );
 
 }
 add_action( 'after_setup_theme', 'setup_auxiliary_features');
@@ -34,6 +35,9 @@ add_action( 'after_setup_theme', 'setup_auxiliary_features');
 // Initialize Libraries
 $timber = new Timber\Timber();
 new TImber_Site();
+
+// Set Gutenberg Options
+require get_template_directory() . '/inc/gutenberg-options.php';
 
 // Selectively Disable Editor 
 require get_template_directory() . '/inc/disable-editor.php';

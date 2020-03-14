@@ -10,8 +10,11 @@
 @import 'base/utilities';
 
 // Layout
+@import 'layout/button';
+@import 'layout/container';
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/image';
 
 // Components
 @import 'components/about-card';

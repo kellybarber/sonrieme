@@ -1,13 +1,17 @@
-.mobile-nav {
-  height: 5.6rem;
-  background-color: $white;
+header {
+  z-index: 100;
 
-  &__logo {
+  .mobile-nav {
+    height: $header-height;
+    background-color: $white;
 
-  }
+    &__logo {
 
-  &__hamburger {
+    }
 
+    &__hamburger {
+
+    }
   }
 }
 
